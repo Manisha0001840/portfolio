@@ -22,9 +22,9 @@ jobs:
           cp -R index.html style.css script.js .nojekyll assets public/
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
